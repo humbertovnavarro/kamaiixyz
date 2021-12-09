@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import axios from 'lib/axios';
+import axios from 'lib/axios-tor';
 import { resolve } from 'path/posix';
 type SyncRequest = {
   hostname: string,

@@ -1,6 +1,7 @@
 import sqlite3 from 'better-sqlite3';
-const db = new sqlite3('../appdata.sqlite');
+const db = new sqlite3('../arsene.sqlite');
 const schema = `
+
 CREATE TABLE IF NOT EXITS nodes (
 	id integer PRIMARY KEY AUTOINCREMENT,
 	hostname text,
@@ -60,5 +61,13 @@ CREATE TABLE IF NOT EXITS badtokens (
 	token text
 );
 
-`
+CREATE TABLE IF NOT EXITS authtokens (
+	token text
+);
+
+CREATE TABLE IF NOT EXITS hosts (
+	hostname text
+);
+`;
+db.exec(schema);
 export default db;
