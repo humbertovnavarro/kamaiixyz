@@ -5,15 +5,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "authorize": "exec bash/authorize.bash",
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node-rsa": "^1.1.1",
+    "axios": "^0.24.0",
+    "better-sqlite3": "^7.4.5",
+    "json-web-token": "^3.2.0",
+    "jsonwebtoken": "^8.5.1",
     "next": "12.0.7",
+    "node-rsa": "^1.1.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "socks-proxy-agent": "^6.1.1"
   },
   "devDependencies": {
-    "@types/node": "16.11.12",
+    "@types/better-sqlite3": "^7.4.1",
+    "@types/jsonwebtoken": "^8.5.6",
+    "@types/node": "^16.11.12",
     "@types/react": "17.0.37",
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
