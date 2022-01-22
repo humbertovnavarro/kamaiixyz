@@ -1,0 +1,10 @@
+.content {
+  transform: translateY(2rem);
+  opacity: 0;
+  transition: opacity 0.25s, transform 0.25s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0px);
+}

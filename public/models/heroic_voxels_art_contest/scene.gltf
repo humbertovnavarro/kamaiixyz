@@ -1,0 +1,689 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        50,
+        126,
+        50
+      ],
+      "min": [
+        -50,
+        0,
+        -50
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 786384,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.99928998947143555,
+        0.99928998947143555
+      ],
+      "min": [
+        0.00070999999297782779,
+        0.00070999999297782779
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 145482,
+      "max": [
+        65531
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1572768,
+      "componentType": 5126,
+      "count": 11755,
+      "max": [
+        46,
+        126,
+        45
+      ],
+      "min": [
+        -49,
+        4,
+        -50
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1713828,
+      "componentType": 5126,
+      "count": 11755,
+      "max": [
+        0,
+        1,
+        0
+      ],
+      "min": [
+        0,
+        1,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 1048512,
+      "componentType": 5126,
+      "count": 11755,
+      "max": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 524256,
+      "componentType": 5126,
+      "count": 11755,
+      "max": [
+        0.99874001741409302,
+        0.99882000684738159
+      ],
+      "min": [
+        0.00070999999297782779,
+        0.00070999999297782779
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 581928,
+      "componentType": 5125,
+      "count": 23220,
+      "max": [
+        11754
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "elbriga (https://sketchfab.com/elbriga)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/d3b8784b312f42f8a469c89a52e394ba",
+      "title": "Heroic Voxels Art Contest"
+    },
+    "generator": "Sketchfab-3.20.7",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 674808,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 618296,
+      "byteOffset": 674808,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1854888,
+      "byteOffset": 1293104,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1236592,
+      "byteOffset": 3147992,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 4384584,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_unlit"
+  ],
+  "images": [
+    {
+      "uri": "textures/palette_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/palette_emissive.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 1,
+        "texCoord": 0
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "name": "palette",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "fortresse_dragon",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "fortresse_dragon",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        0.069520000000000026,
+        0,
+        0,
+        0,
+        0,
+        -0,
+        0.069520000000000026,
+        0,
+        0,
+        -0.069520000000000026,
+        -0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "fortresse_dragon"
+    },
+    {
+      "mesh": 0,
+      "name": "fortresse_dragon"
+    },
+    {
+      "mesh": 1,
+      "name": "fortresse_dragon"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        0.63438000000000005,
+        -0.16999000000000006,
+        -0.7541000000000001,
+        0,
+        0.25884000000000001,
+        0.96592000000000011,
+        0,
+        0,
+        0.72840000000000005,
+        -0.19519000000000003,
+        0.65676000000000012,
+        0,
+        2.8447999999999998,
+        -0.90022999999999997,
+        4.9347900000000005,
+        1
+      ],
+      "name": "Spot"
+    },
+    {
+      "name": "Spot"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        0.47948000000000007,
+        0.40640000000000004,
+        -0.77777000000000007,
+        0,
+        -0.64658000000000004,
+        0.76285000000000014,
+        0,
+        0,
+        0.59332000000000007,
+        0.50289000000000006,
+        0.62855000000000005,
+        0,
+        3.17957,
+        -0.90022999999999997,
+        2.5611300000000004,
+        1
+      ],
+      "name": "Sun"
+    },
+    {
+      "name": "Sun"
+    },
+    {
+      "children": [
+        11
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.20614000000000002,
+        1.16564,
+        1.8309899999999999,
+        1
+      ],
+      "name": "Point"
+    },
+    {
+      "name": "Point"
+    },
+    {
+      "children": [
+        13
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1.9158499999999998,
+        -0.76829000000000014,
+        3.2336100000000001,
+        1
+      ],
+      "name": "Point.001"
+    },
+    {
+      "name": "Point.001"
+    },
+    {
+      "children": [
+        15
+      ],
+      "matrix": [
+        0.86911000000000005,
+        0.43760000000000004,
+        -0.23055,
+        0,
+        0.26905000000000001,
+        -0.027130000000000005,
+        0.96274000000000015,
+        0,
+        0.41504000000000002,
+        -0.89876000000000011,
+        -0.14132,
+        0,
+        2.8447999999999998,
+        -6.3069499999999996,
+        6.4031099999999999,
+        1
+      ],
+      "name": "Spot.001"
+    },
+    {
+      "name": "Spot.001"
+    },
+    {
+      "children": [
+        17
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.4042,
+        -1.2494399999999999,
+        0.5607700000000001,
+        1
+      ],
+      "name": "Point.002"
+    },
+    {
+      "name": "Point.002"
+    },
+    {
+      "children": [
+        19
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.67501000000000011,
+        -0.10744000000000001,
+        0.5607700000000001,
+        1
+      ],
+      "name": "Point.003"
+    },
+    {
+      "name": "Point.003"
+    },
+    {
+      "children": [
+        21
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.13506,
+        1.8541100000000001,
+        0.22555000000000003,
+        1
+      ],
+      "name": "Point.004"
+    },
+    {
+      "name": "Point.004"
+    },
+    {
+      "children": [
+        23
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.68476000000000015,
+        1.1127100000000001,
+        0.70435999999999999,
+        1
+      ],
+      "name": "Point.005"
+    },
+    {
+      "name": "Point.005"
+    },
+    {
+      "children": [
+        25
+      ],
+      "matrix": [
+        0.40847000000000006,
+        -0.21465000000000001,
+        -0.88718000000000008,
+        0,
+        -0.78307000000000004,
+        0.41700000000000004,
+        -0.46143000000000001,
+        0,
+        0.46900000000000003,
+        0.88319000000000014,
+        0.0022500000000000007,
+        0,
+        3.9118699999999995,
+        9.2014199999999988,
+        3.06148,
+        1
+      ],
+      "name": "Spot.002"
+    },
+    {
+      "name": "Spot.002"
+    },
+    {
+      "children": [
+        27
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.23038,
+        -0.8128200000000001,
+        2.9787999999999997,
+        1
+      ],
+      "name": "Point.006"
+    },
+    {
+      "name": "Point.006"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9728,
+      "minFilter": 9728,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 1,
+      "source": 1
+    }
+  ]
+}
+

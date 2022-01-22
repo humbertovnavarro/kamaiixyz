@@ -1,14 +1,20 @@
-import 'tailwindcss/tailwind.css'
-import type { AppProps } from 'next/app'
-import React, { useEffect, useState } from 'react';
-import socket from 'lib/socketio';
-function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    socket.emit('hi')
-  }, []);
+import { AppProps } from 'next/app'
+import Head from 'next/head'
+import '../styles/index.css'
+import MainLayout from '../layouts/main';
+import TransitionLayout from 'layouts/TransitionLayout';
+const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <Component {...pageProps} />
-  );
+  <>
+    <Head>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+    <MainLayout>
+      <TransitionLayout>
+        <Component {...pageProps} />
+      </TransitionLayout>
+    </MainLayout>
+  </>
+  )
 }
-
-export default MyApp
+export default App
