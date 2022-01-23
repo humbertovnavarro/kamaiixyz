@@ -9,8 +9,11 @@ export default function TransitionLayout(props: TransitionLayoutProps) {
   const [transitionStage, setTransitionStage] = useState("fadeOut");
   useEffect(() => {
     setTransitionStage("fadeIn");
-  }, []);
-
+    // Compensate for the delay in the transition animation.
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    },350);
+  },[])
   useEffect(() => {
     if (props.children !== displayChildren) setTransitionStage("fadeOut");
   }, [props.children, setDisplayChildren, displayChildren]);
@@ -20,7 +23,6 @@ export default function TransitionLayout(props: TransitionLayoutProps) {
       <div
         onTransitionEnd={() => {
           if (transitionStage === "fadeOut") {
-            console.log("fading out");
             setDisplayChildren(props.children);
             setTransitionStage("fadeIn");
           }

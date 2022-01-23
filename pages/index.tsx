@@ -4,7 +4,7 @@ import home from "../threeScenes/home";
 const Page = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <ThreeCanvas scene={home}/>
+      <ThreeCanvas className="m-5 rounded-lg border-2 border-light" scene={home}/>
       <h1 className="text-4xl text-center">
         <CoolText>
           Humberto Navarro

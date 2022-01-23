@@ -1,6 +1,4 @@
 import CoolText from "components/CoolText";
-import ThreeCanvas from "components/ThreeCanvas";
-import scene from "../threeScenes/voxels";
 const Page = () => {
   return (
     <>

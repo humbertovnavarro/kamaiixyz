@@ -12,7 +12,7 @@ const Layout = (props: LayoutProps) => {
       <ThreeCanvas
         className="w-screen h-screen fixed bot-0"
         scene={skybox}/>
-      <main className="flex justify-center p-8">
+      <main className="flex justify-center">
         <div className="md:w-2/5 mb-32">
           {props.children}
         </div>

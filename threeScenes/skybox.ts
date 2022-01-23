@@ -1,8 +1,6 @@
 import ThreeCanvas from 'components/ThreeCanvas';
 import * as THREE from 'three';
-import { Clock, Vector3 } from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-
+import { Vector3 } from 'three';
 const cameraOffSet = new Vector3(0, 0, 5);
 const scene = (canvas: HTMLCanvasElement, reactCanvas: ThreeCanvas) => {
   const scene = new THREE.Scene();
