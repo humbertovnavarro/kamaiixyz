@@ -1,57 +1,19 @@
 import CoolText from "components/CoolText";
-import ThreeCanvas from "components/ThreeCanvas";
-import home from "../threeScenes/home";
+import Card from "components/Styles";
 const Page = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <ThreeCanvas className="m-5 rounded-lg border-2 border-light" scene={home}/>
-      <h1 className="text-4xl text-center">
-        <CoolText>
-          Humberto Navarro
-        </CoolText>
-      </h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo deleniti nisi molestias quod? Repellendus maxime ipsum aliquam suscipit unde, facilis nam labore cumque corporis adipisci, laborum in magni magnam.</p>
+    <div className={`my-5 space-y-1 ${Card}`}>
+      <CoolText speed={100}>
+        Humberto Navarro
+      </CoolText>
+      <CoolText delay={100}>
+        Full Stack Web Developer
+      </CoolText>
+      <hr></hr>
+      <p>
+        Welcome to my portfolio.
+      </p>
+
     </div>
   );
 }

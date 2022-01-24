@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 type CoolTextProps = {
   children: string;
   speed?: number;
+  delay?: number;
 }
 const CoolText = (props: CoolTextProps) => {
   const chars = props.children.split("");
@@ -12,33 +13,40 @@ const CoolText = (props: CoolTextProps) => {
   }
   useEffect(() => {
     const ms = (props.speed || 300) / chars.length;
-    const interval = setInterval(() => {
+    let timedout = true;
+    const intervalFunction = () => {
+      if(timedout) return;
       if(index < chars.length) {
         setIndex(index => index + 1);
       } else {
         clearInterval(interval);
       }
-    }, ms);
+    }
+    const timeout = setTimeout(() => {timedout = false}, props.delay || 0);
+    const interval = setInterval(intervalFunction, ms);
     return () => {
       clearInterval(interval);
+      clearInterval(timeout);
+      setIndex(0);
     }
-  }, [chars, index, props.speed]);
+  }, []);
   const $spans = chars.map((char, i) => {
     return (
       <span key={i} className={`
-      font-mono text-5xl
+      font-mono text-3xl
       transition-all duration-200 ease-in-out
        ${i < index ?
-       "text-quaternary" :
+       "text-light" :
        "text-transparent"}`}>
         {char}
       </span>
     );
   });
   return (
-    <span>
+    <div>
+
       {$spans}
-    </span>
+    </div>
   )
 }
 export default CoolText;

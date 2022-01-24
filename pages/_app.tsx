@@ -10,9 +10,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <MainLayout>
-      <TransitionLayout>
-        <Component {...pageProps} />
-      </TransitionLayout>
+      <Component {...pageProps} />
     </MainLayout>
   </>
   )

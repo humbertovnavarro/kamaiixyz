@@ -326,10 +326,10 @@
     "@react-spring/shared" "~9.4.0"
     "@react-spring/types" "~9.4.0"
 
-"@react-three/drei@^8.6.1":
-  version "8.6.1"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-8.6.1.tgz#a957612d4fd0c40ae6872f8eab47b6e15861f438"
-  integrity sha512-w6NOUjpLTDtlYO9/K1yMhrvcG4E28d1gS+4a2+X/KoYreMJfwChVW8XDP1nOA/xF2Xqk1f2oVYK5IFsoNF64ew==
+"@react-three/drei@^8.6.3":
+  version "8.6.3"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-8.6.3.tgz#5ebcfb562aad23a50daa4a44f53c1177f797c74c"
+  integrity sha512-PE8iyujVX9wOK7vXZ3cTO+MZwJIzUBH79Ec2pNxEHeqUVUaWD7ZuU1rZu10xEEJ8JnlKciE3luzXmTuQ9qDZHw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/three" "^9.3.1"
@@ -431,6 +431,11 @@
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/lodash@^4.14.178":
+  version "4.14.178"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.178.tgz#341f6d2247db528d4a13ddbb374bcdc80406f4f8"
+  integrity sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==
+
 "@types/node@*", "@types/node@>=10.0.0", "@types/node@^16.11.12":
   version "16.11.12"
   resolved "https://registry.npmjs.org/@types/node/-/node-16.11.12.tgz"
@@ -471,6 +476,11 @@
   version "0.136.1"
   resolved "https://registry.yarnpkg.com/@types/three/-/three-0.136.1.tgz#030fc01cdc5ce82cad93db17b94a24515cb4b50e"
   integrity sha512-gzTw6RR4dU8sGf+RpLBWWKHRVIJ4gwKVQPk+IFCgha04Efg/itXYUalX6iBcYeSmaDu0qE5M7uTq0XLQpU4FAg==
+
+"@types/uuid@^8.3.4":
+  version "8.3.4"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
+  integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
 
 "@typescript-eslint/eslint-plugin@^5.10.0":
   version "5.10.0"
@@ -2875,7 +2885,7 @@ lodash.topath@^4.5.2:
 
 lodash@^4.17.21:
   version "4.17.21"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.1.0, loose-envify@^1.4.0:
@@ -4598,6 +4608,11 @@ utility-types@^3.10.0:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.10.0.tgz#ea4148f9a741015f05ed74fd615e1d20e6bed82b"
   integrity sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"

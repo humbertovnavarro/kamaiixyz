@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "./TransitionLayout.module.css";
 type TransitionLayoutProps = {
@@ -9,7 +8,6 @@ export default function TransitionLayout(props: TransitionLayoutProps) {
   const [transitionStage, setTransitionStage] = useState("fadeOut");
   useEffect(() => {
     setTransitionStage("fadeIn");
-    // Compensate for the delay in the transition animation.
     setTimeout(() => {
       window.scrollTo(0, 0);
     },350);
@@ -17,10 +15,8 @@ export default function TransitionLayout(props: TransitionLayoutProps) {
   useEffect(() => {
     if (props.children !== displayChildren) setTransitionStage("fadeOut");
   }, [props.children, setDisplayChildren, displayChildren]);
-
   return (
-    <div>
-      <div
+    <span
         onTransitionEnd={() => {
           if (transitionStage === "fadeOut") {
             setDisplayChildren(props.children);
@@ -28,9 +24,10 @@ export default function TransitionLayout(props: TransitionLayoutProps) {
           }
         }}
         className={`${styles.content} ${styles[transitionStage]}`}
-      >
-        {displayChildren}
-      </div>
-    </div>
+        {...displayChildren}
+    >
+      {displayChildren}
+    </span>
+
   );
 }

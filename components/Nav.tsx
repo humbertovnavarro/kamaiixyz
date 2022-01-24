@@ -1,15 +1,18 @@
 import { MouseEventHandler } from "react";
 import Link from "next/link";
-import { Router } from "next/router";
+import Image from "next/image";
 type NavProps = {
   href: string;
   title: string;
-  icon?: string;
+  icon?: StaticImageData;
   active?: boolean;
   simple?: boolean;
   onClick?: (page: string) => void;
 }
 const baseClassName = `
+  text-xs
+  md:text-sm
+  lg:text-base
   w-full flex items-center justify-center
   h-full text-center
   transition-all duration-500 ease-in-out
@@ -30,18 +33,13 @@ const Nav = (props: NavProps) => {
       window.open(props.href, "_blank");
       return;
     }
-    if(props.onClick) {
-      props.onClick(props.href);
-    } else {
-      console.error("Nav.tsx: onClick prop is required when simple is false.");
-    }
   }
   let className = baseClassName;
   className += props.active ? activeClassName : "";
   const anchorProp = (
     <a className={className}>
-      {props.icon && <i className={`fas fa-${props.icon} mr-2`}></i>}
-      <span className={props.icon && "sm:hidden"}>{props.title}</span>
+      <span>{props.title}</span>
+      {props.icon && <Image className="m-1 hidden lg:fixed" src={props.icon} alt="linkedIn Icon"></Image>}
     </a>
   )
   return (
