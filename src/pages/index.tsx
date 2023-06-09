@@ -1,11 +1,38 @@
 import { type NextPage } from "next";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
-import Link from "next/link";
+import Service, { ServiceProps } from "~/components/Service";
 import { api } from "~/utils/api";
-
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
+
+  const selfHostedServices: Array<ServiceProps> = [
+    {
+      title: "PiHole",
+      description: "DNS level ad blocker",
+      imageSrc: "/images/pihole.png",
+      link: "https://pihole.kamaii.xyz/admin",
+      projectLink: "https://pi-hole.net/"
+    },
+    {
+      title: "Nginx Proxy Manager",
+      description: "Reverse proxy manager",
+      imageSrc: "/images/nginx-proxy-manager.png",
+      projectLink: "https://nginxproxymanager.com/",
+      link: "https://nginx.kamaii.xyz"
+    },
+  ];
+
+  const projects: Array<ServiceProps> = [
+      {
+        title: "Farwater Minecraft Server",
+        description: "Minecraft server focused on automation and engineering, featuring a custom modpack, a custom mod, and custom recipes using KubeJS.",
+        imageSrc: "/images/farwater.webp",
+        link: "https://farwater.de",
+        projectLink: "https://farwater.de",
+        gitHubLink: "https://github.com/orgs/farwater-create/repositories"
+      }
+  ];
 
   return (
     <>
@@ -15,39 +42,48 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+        <div className="flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
+            The <span className="text-[hsl(280,100%,70%)]">KamaiiXYZ</span> network
           </h1>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="https://create.t3.gg/en/usage/first-steps"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">First Steps →</h3>
-              <div className="text-lg">
-                Just the basics - Everything you need to know to set up your
-                database and authentication.
-              </div>
-            </Link>
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="https://create.t3.gg/en/introduction"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">Documentation →</h3>
-              <div className="text-lg">
-                Learn more about Create T3 App, the libraries it uses, and how
-                to deploy it.
-              </div>
-            </Link>
+          <h2 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">by Humberto Navarro</h2>
+          <p className="text-2xl text-white border-white border-b-2 border-white/20 w-full text-center p-2" id="services">
+            About me
+          </p>
+          <p className="text-white  text-xl w-2/3 text-center">
+          Experienced Chicano Zoomer web developer from Southern California adept in React, Node.js, and TypeScript. Skilled at crafting high-quality web applications that solve real-world problems. Thrives in collaborative team environments and embraces continuous learning. Passionate about delivering exceptional software and driven by a problem-solving mindset. Also enjoys reading books and playing video games. Ready to contribute technical prowess, adaptability, and a diverse perspective to your team's success. Let's connect and make an impact together!
+          </p>
+          <p className="text-2xl text-white border-white border-b-2 border-white/20 w-full text-center p-2" id="projects">
+            Projects
+          </p>
+          <div className={`grid gap-2 w-2/3`}>
+            {projects.map((service) => (
+              <Service
+                key={service.title}
+                title={service.title}
+                description={service.description}
+                link={service.link}
+                imageSrc={service.imageSrc}
+                projectLink={service.projectLink}
+                gitHubLink={service.gitHubLink}
+              />
+            ))}
           </div>
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-2xl text-white">
-              {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-            </p>
-            <AuthShowcase />
+          <p className="text-2xl text-white border-white border-b-2 border-white/20 w-full text-center p-2" id="services">
+            Services
+          </p>
+          <div className={`grid gap-2 w-2/3`}>
+            {selfHostedServices.map((service) => (
+              <Service
+                key={service.title}
+                title={service.title}
+                description={service.description}
+                link={service.link}
+                imageSrc={service.imageSrc}
+                projectLink={service.projectLink}
+                gitHubLink={service.gitHubLink}
+              />
+            ))}
           </div>
         </div>
       </main>
