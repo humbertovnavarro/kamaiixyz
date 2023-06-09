@@ -51,7 +51,7 @@ const Home: NextPage = () => {
             About me
           </p>
           <p className="text-white  text-xl w-2/3 text-center">
-          Experienced Chicano Zoomer web developer from Southern California adept in React, Node.js, and TypeScript. Skilled at crafting high-quality web applications that solve real-world problems. Thrives in collaborative team environments and embraces continuous learning. Passionate about delivering exceptional software and driven by a problem-solving mindset. Also enjoys reading books and playing video games. Ready to contribute technical prowess, adaptability, and a diverse perspective to your team's success. Let's connect and make an impact together!
+          Experienced Chicano Zoomer web developer from Southern California adept in React, Node.js, and TypeScript. Skilled at crafting high-quality web applications that solve real-world problems. Thrives in collaborative team environments and embraces continuous learning. Passionate about delivering exceptional software and driven by a problem-solving mindset. Also enjoys reading books and playing video games. Ready to contribute technical prowess, adaptability, and a diverse perspective to your team&apos;s success. Let&apos;s connect and make an impact together!
           </p>
           <p className="text-2xl text-white border-white border-b-2 border-white/20 w-full text-center p-2" id="projects">
             Projects
