@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export interface ServiceProps {
@@ -25,7 +26,7 @@ const Service: React.FC<ServiceProps> = ({
             href={link}
             target="_blank"
         >
-            <img src={imageSrc} alt={title} className="w-16 h-16 my-2" />
+            <Image src={imageSrc} alt={title} className="my-2" width={64} height={64} />
         </a>
         <div className="font-bold text-xl mb-2 text-white">{title}</div>
         <p className="text-white text-base">{description}</p>
