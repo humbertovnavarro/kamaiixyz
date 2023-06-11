@@ -35,18 +35,18 @@ const Service: React.FC<ServiceProps> = ({
             <a
                 href={gitHubLink}
                 target="_blank"
-                className="rounded-full text-sm font-semibold text-white bg-purple-600 hover:bg-purple-700 px-6 py-2 mt-4 transition"
+                className="rounded-full text-sm font-semibold text-white bg-purple-600 hover:bg-purple-700 px-3 py-2 mt-4 transition"
             >
                 GitHub
             </a>
             )}
-            
+
             {
                 projectLink && (
                     <a
                     href={projectLink}
                     target="_blank"
-                    className="rounded-full text-sm font-semibold text-white bg-purple-600 hover:bg-purple-700 px-6 py-2 mt-4 transition"
+                    className="rounded-full text-sm font-semibold text-white bg-purple-600 hover:bg-purple-700 px-3 py-2 mt-4 transition"
                     >
                     Learn More
                     </a>

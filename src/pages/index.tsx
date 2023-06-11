@@ -39,14 +39,14 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <div className="flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-          <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+          <h1 className="lg:text-5xl md:text-4xl text-2xl font-extrabold tracking-tight text-white sm:text-[5rem]">
             The <span className="text-[hsl(280,100%,70%)]">KamaiiXYZ</span> network
           </h1>
-          <h2 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">by Humberto Navarro</h2>
+          <h2 className="lg:text-5xl md:text-4xl text-2xl font-extrabold tracking-tight text-white sm:text-[5rem]">by Humberto Navarro</h2>
           <p className="text-2xl text-white border-white border-b-2 border-white/20 w-full text-center p-2" id="services">
             About me
           </p>
-          <p className="text-white  text-xl w-2/3 text-center">
+          <p className="text-white lg:text-xl md:text-xl lg:w-2/3 sm:w-full">
           Experienced Chicano Zoomer web developer from Southern California adept in React, Node.js, and TypeScript. Skilled at crafting high-quality web applications that solve real-world problems. Thrives in collaborative team environments and embraces continuous learning. Passionate about delivering exceptional software and driven by a problem-solving mindset. Also enjoys reading books and playing video games. Ready to contribute technical prowess, adaptability, and a diverse perspective to your team&apos;s success. Let&apos;s connect and make an impact together!
           </p>
           <p className="text-2xl text-white border-white border-b-2 border-white/20 w-full text-center p-2" id="projects">
